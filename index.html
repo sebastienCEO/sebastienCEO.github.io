@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Gsap animation</title>
+  <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  <link href="https://blokkfontcom-losgordos.netdna-ssl.com/v2/blokkfont.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSRulePlugin.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/utils/Draggable.min.js"></script> -->
+  <script src="js/script.js"></script>
+  <!-- <script src="js/animation.js"></script> -->
+</head>
+
+<body>
+  <!-- ANIM CANVAS -->
+  <div id="factory_canvas" title="animation about emoji factory">
+    <div id="factory">
+      <!-- EMOJIS -->
+      <div id="emoji" class="emoji">
+        <div class="emoji_color"></div>
+        <div class="emoji_face"></div>
+      </div>
+      <div id="emoji_eyes" class="emoji emoji_face emoji_eyes"></div>
+      <div id="emoji_mouth" class="emoji emoji_face emoji_mouth"></div>
+      <!-- CONVEYORS BELT -->
+      <div class="conveyor_belt conveyor_belt_left">
+        <div class="conveyor_gear conveyor_gear_left"></div>
+        <div class="conveyor_gear conveyor_gear_right"></div>
+      </div>
+      <div class="conveyor_belt conveyor_belt_center">
+        <div class="conveyor_gear conveyor_gear_left"></div>
+        <div class="conveyor_gear conveyor_gear_right"></div>
+      </div>
+      <div class="conveyor_belt conveyor_belt_right">
+        <div class="conveyor_gear conveyor_gear_left"></div>
+        <div class="conveyor_gear conveyor_gear_right"></div>
+      </div>
+      <!-- MACHINES -->
+      <div id="conveyor_eyes" class="conveyor">
+        <img src="img/funnel.png" alt="conveyor funnel" class="conveyor_funnel">
+        <img src="img/conveyor_control-system.png" alt="conveyor control" class="conveyor_control">
+        <div id="screen_eyes" class="conveyor_screen">
+          <div id="screen_eyes_mood"></div>
+          <div class="loading_bg loading_bg_eyes">
+            <div id="loading_bar_eyes" class="loading_bar loading_bar_eyes"></div>
+          </div>
+        </div>
+      </div>
+      <div id="conveyor_mouth" class="conveyor">
+        <img src="img/funnel.png" alt="conveyor funnel" class="conveyor_funnel">
+        <img src="img/conveyor_control-system.png" alt="conveyor control" class="conveyor_control">
+        <div id="screen_mouth" class="conveyor_screen">
+          <div id="screen_mouth_mood"></div>
+          <div class="loading_bg loading_bg_mouth">
+            <div id="loading_bar_mouth" class="loading_bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- NAV (UI) -->
+  <nav>
+    <h1>EMOJI FACTORY</h1>
+    <form>
+      <div class="">
+        <label for="form_select_face">1.Choose your Emoji</label>
+        <select id="form_select_face" class="" name="form_select_face">
+          <option value="happy">happy</option>
+          <option value="tongue">face with tongue</option>
+          <option value="love">in love</option>
+          <option value="sad">sad</option>
+          <!-- <option value="random">?Surprise me!</option> -->
+        </select>
+      </div>
+      <div class="">
+        <label for="form_select_color">2.Choose your color</label>
+        <select id="form_select_color" class="" name="form_select_color">
+          <option value="yellow">yellow</option>
+          <option value="pink">pink</option>
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+          <!-- <option value="random">Surprise me!</option> -->
+        </select>
+      </div>
+      <button id="form_button" type="button" name="button">3.Build it for me</button>
+    </form>
+  </nav>
+</body>
+</html>
