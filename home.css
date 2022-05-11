@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Avenir next";
+    src: url("assets/Avenir Next.ttc") format("ttc"),
+   }
+@font-face {
+    font-family: "High spirited";
+    src: url("assets/High Spirited.ttf") format("truetype"),
+   }
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.parent { 
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 187px; 
+}
+.div1 {
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: black;
+} 
+.div2 {
+    grid-area: 1 / 2 / 6 / 6;
+    background-image: url("assets/molécule-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 32%;
+} 
+.div3 {
+    grid-area: 1 / 3 / 5 / 5;
+} 
+.div4 {
+    grid-area: 2 / 1 / 6 / 2;
+    background-color: black;
+}
+
+.logo {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+nav {
+    padding-left: 25px;
+}
+
+.loupe {
+    position: absolute;
+    width: 38px;
+    margin-left: 16px;
+}
+
+::placeholder {
+    font-weight: lighter;
+    font-family: "Avenir next";
+    color: #f0efee;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input {
+    color: #f0efee;
+    font-weight: lighter;
+    font-family: "Avenir next";
+}
+
+.search {
+    background: transparent;
+    border: none;
+    border-bottom: 0.15rem solid rgb(240, 239, 238);
+    font-size: 20px;
+    width: 235px;
+    height: 30px;
+}
+
+.profil {
+    position: absolute;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+
+}
+
+.iconeProfil {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    width: 35px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.infoProfil {
+    visibility: hidden;
+    position: absolute;
+    z-index: 3;
+    font-family: "Avenir next";
+    font-weight: normal;
+    color: #f0efee;
+    margin-top: 12px;
+    margin-left: 200px;
+    font-size: 25px;
+}
+
+p {
+    display: inline-block;
+    margin-right: 120px;
+}
+
+.menu {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+}
+
+ul li a {
+    color: #f0efee;
+    text-decoration: none;
+    font-family: "Avenir next";
+    font-weight: lighter;
+}
+
+ul li {
+    margin-bottom: 30px;
+}
+
+ul li:hover {
+    color: black;
+    background-color: #f0efee;
+}
+
+ul li:hover a{
+    color: black;
+    background-color: #f0efee;
+}
+
+.recettes, .tendances, .partenaires, .contact {
+    font-size: 30px;
+}
+
+.plat1, .plat2, .plat3 {
+    font-family: "Avenir next";
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#cercle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #DD574D;
+    margin-top: 50px;
+}
+
+#cercle1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #CADD97;
+    margin-top: 122px;
+}
+
+#cercle2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #DD574D;
+    margin-top: 390px;
+}
+
+#cercle3 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #CADD97;
+    margin-top: 462px;
+}
+
+#bloc {
+    position: absolute;
+    background-color: rgb(240, 239, 238, 0.4);
+    backdrop-filter: blur(5px);
+    width: 550px;
+    height: 500px;
+    margin-top: 160px;
+}
+
+h1 {
+    position: absolute;
+    font-family: "High spirited";
+    font-weight: normal;
+    color: #f0efee;
+    font-size: 160px;
+    z-index: 1;
+    margin-left: 30px;
+    transform: rotate(353deg);
+    margin-block-start: 4rem;
+    text-shadow: 0px 2px black;
+}
+
+h2 {
+    font-family: "Avenir next";
+    font-weight: normal;
+    margin-left: 30px;
+    margin-top: 120px;
+    margin-right: 30px;
+    line-height: 50px;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: "Avenir next";
+    font-weight: normal;
+    font-size: 35px;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 60px;
+}

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Avenir next";
+    src: url("assets/Avenir Next.ttc") format("ttc"),
+   }
+
+body {
+    background-image: url("assets/8a918708d3729f8b4d5b60e8377f5968.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.logo {
+    width: 13%;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+
+#container {
+    background-color: rgb(240, 239, 238, 0.3);
+    backdrop-filter: blur(2px);
+    width: 450px;
+    height: 450px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+form {
+    padding: 65px;
+    padding-top: 71px;
+}
+
+::placeholder {
+    font-weight: lighter;
+    font-family: "Avenir next";
+    color: #f0efee;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input {
+    color: #f0efee;
+    font-weight: lighter;
+    font-family: "Avenir next";
+}
+
+.enveloppe {
+    position: absolute;
+    width: 50px;
+    margin-top: 71px;
+    margin-left: 53px;
+}
+
+.mail {
+    background: transparent;
+    border: none;
+    border-bottom: 0.15rem solid rgb(240, 239, 238);
+    font-size: 20px;
+    width: 312px;
+    height: 30px;
+}
+
+.cadenas {
+    position: absolute;
+    width: 50px;
+    margin-top: 145px;
+    margin-left: 52px;
+}
+
+.motdepasse {
+    background: transparent;
+    border: none;
+    border-bottom: 0.15rem solid rgb(240, 239, 238);
+    font-size: 20px;
+    margin-top: 44px;
+    margin-bottom: 10px;
+    width: 312px;
+    height: 30px;
+}
+
+.oublie {
+    font-weight: lighter;
+    font-family: "Avenir next";
+    text-align: right;
+    color: #f0efee;
+}
+
+.login {
+    cursor: pointer;
+    font-family: "Avenir next";
+    font-weight: 500;
+    margin-top: 30px;
+    border: none;
+    background-color: #DD574D;
+    color: #f0efee;
+    width: 317px;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.login:hover {
+    background: transparent;
+    border: 0.15rem solid #DD574D;
+}
+
+.nocompte {
+    font-weight: lighter;
+    font-family: "Avenir next";
+    text-align: center;
+    color: #f0efee;
+}
+
+.lien {
+    color: #f0efee;
+    font-weight: bolder;
+}
+
+.lien:hover {
+    color: #DD574D;
+    font-weight: bolder;
+}
